@@ -1,0 +1,133 @@
+body{
+    background-color: #111;
+}
+.textColor {
+    color: #ddd !important;
+}
+
+.headerContent {
+    position: absolute;
+    top: 150px;
+    left: 2%;
+}
+@media only screen and (max-width: 967px) {
+    .headerContent{
+        top: 100px !important;
+    }
+    .headerContent h1{
+        font-size: 2.4rem !important;
+    }
+    .headerContent p{
+        margin-top: 20px !important;
+        width: 50% !important;
+    }
+    .swiper-img{
+        object-fit: cover;
+        height: 300px !important;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .headerContent{
+        top: 90px !important;
+    }
+    .headerContent h1{
+        font-size: 1.8rem !important;
+    }
+    .headerContent p{
+        margin-top: 20px !important;
+        width: 70% !important;
+        font-size: 1rem !important
+    }
+    .btn{
+        height: 30px !important;
+        padding-top: -10px !important;
+    }
+    .btn span{
+       font-size: 0.9rem !important; 
+       
+    }
+    .header-fade{
+        height: 30px;
+    }
+}
+.header-fade{
+    width: 100%;
+    height: 70px;
+    position: absolute ;
+    bottom: 0px;
+    background-image: linear-gradient(180deg, transparent, rgba(15,15,15,0.61), #111, #111);
+}
+.main-content{
+    height: inherit;
+}
+.movie-title{
+    color: #ddd;
+    margin: 25px 0px 0px 30px ;
+    font-size: 1.5rem;
+}
+.swiper-img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    transition:heght 1s, width 1s, transform 1s;
+}
+.swiper-img:hover{
+    box-shadow: rgba(221, 221, 221, 0.909) 0px 7px 29px 0px;
+    height: 440px;
+    margin-top: -20px;
+    transform: scaleX(1.1);
+}
+.modal-container{
+    width: 100%;
+    height: 100%;
+    /* background:heght linear-gradient(90deg, #000 50%, transparent); */
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+    transition: 0.3s 0.3s ease-out;
+}
+.modal{
+    top: 25% !important;
+    height: 33rem !important;
+}
+.backDrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(17,17,17,0.7);
+    animation: fadeIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.modal-container-detail{
+    background: linear-gradient(90deg, #000 50%, transparent);
+    width: 80%;
+    height: 100%;
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.overview__movie{
+    width: 40%;
+    color: rgb(148, 148, 148);
+    margin-top: 50px;
+}
+.search-movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    top: 50px;
+}
+.search-item{
+    width: 290px;
+    margin-top: 60px;
+    border-radius: 6px;
+
+}
